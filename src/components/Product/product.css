@@ -1,0 +1,32 @@
+.product {
+  background-color: black;
+  height: 100%;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.product p {
+  font-size: 18px;
+  color: gray;
+  font-weight: 600;
+}
+.rating {
+  color: hotpink;
+}
+.product button {
+  width: 100%;
+  background-color: hotpink;
+  color: white;
+  outline: 0;
+  border: none;
+  padding: 5px 0;
+  border-radius: 15px;
+  transition: 0.3s all linear;
+  font-size: 18px;
+  font-weight: 600;
+}
+.product button:hover {
+  background-color: rgb(170, 0, 248);
+  color: white;
+  letter-spacing: 1px;
+}
