@@ -32,7 +32,7 @@ const useAllData = () => {
     }
 
   useEffect(() => {
-    fetch("http://localhost:5000/allProduct").then(res=> res.json()).then(data => setProducrs(data))
+    fetch("https://ghoulish-pumpkin-61403.herokuapp.com/allProduct").then(res=> res.json()).then(data => setProducrs(data))
   },[])
 
     const auth = getAuth();

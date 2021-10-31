@@ -19,7 +19,7 @@ const Tour = () => {
 
     const { register, handleSubmit,reset, errors } = useForm(); // initialize the hook
     useEffect(() => {
-        fetch(`http://localhost:5000/allProduct/${id}`).then(res => res.json()).then(dataProduct => setProduct(dataProduct))
+        fetch(`https://ghoulish-pumpkin-61403.herokuapp.com/allProduct/${id}`).then(res => res.json()).then(dataProduct => setProduct(dataProduct))
     })
    
     const onSubmit = (data) => {
@@ -35,7 +35,7 @@ const Tour = () => {
               )
         }
         data.status= "Pending"
-        axios.post("http://localhost:5000/booking", data)
+        axios.post("https://ghoulish-pumpkin-61403.herokuapp.com/booking", data)
             .then(response => {
                 if (response.data.insertedId) {
                     success()

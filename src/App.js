@@ -10,7 +10,6 @@ import Admin from './components/Admin/Admin';
 import Headers from './components/Headers/Headers';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import Login from './components/Login/Login';
-import { useContext } from 'react';
 import AllContextProvider, { AllContext } from './components/Context/AllContextProvider';
 import Tour from './components/Tour/Tour';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';

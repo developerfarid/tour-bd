@@ -13,14 +13,14 @@ const MyOrder = () => {
     
     const { user } = useData()
     useEffect(() => {
-        fetch(`http://localhost:5000/booking/${user?.email}`)
+        fetch(`https://ghoulish-pumpkin-61403.herokuapp.com/booking/${user?.email}`)
             .then(res => res.json())
         .then(data => setOrder(data))
     }, [user?.email])
     console.log(order);
     const handleCancel = (id) => {
         console.log(id);
-        fetch(`http://localhost:5000/booking/${id}`, {
+        fetch(`https://ghoulish-pumpkin-61403.herokuapp.com/booking/${id}`, {
             method:"DELETE"
         })
             .then(ress=> ress.json())
@@ -30,26 +30,7 @@ const MyOrder = () => {
                 setOrder(re);
         })
     }
-    // const handleUpdate = (id) => {
-    //     console.log(id);
-    //     fetch(`http://localhost:5000/booking/${id}`, {
-    //         method: 'PUT',
-    //         headers: {
-    //             'content-type': 'application/json'
-    //         },
-    //         body: JSON.stringify(newok)
-    //     })
-    //         .then(ress=> ress.json())
-    //         .then(res => {
-    //             fetch(`http://localhost:5000/booking/${user?.email}`)
-    //             .then(res => res.json())
-    //         .then(data => setOrder(data))
-                
-    //     })
-    // }
-  
-    
-    
+
     return (
         <Container className="py-5">
             <Table responsive="md" striped bordered hover>
