@@ -9,7 +9,7 @@ const Headers = () => {
     return (
         <Navbar className=" my-navber bg-black" expand="lg">
         <Container>
-            <NavLink style={{ fontFamily: "Oswald" }} className="text-decoration-none fs-1 text-info" to="/home">Chil</NavLink>
+            <NavLink style={{ fontFamily: "Oswald" }} className="text-decoration-none fs-1 text-info" to="/home">Chill</NavLink>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto ">

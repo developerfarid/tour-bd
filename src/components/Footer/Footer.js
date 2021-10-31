@@ -39,7 +39,7 @@ const Footer = () => {
                 <Row xs={1} sm={2} md={3}>
                     <Col>
                         <div className="footer-item">
-                            <h1>Chil</h1>
+                            <h1>Chill</h1>
                             <p>pustfarid333@gmail.com</p>
                             <p>01629094984</p>
                             <p>Manikgonj Dhaka</p>

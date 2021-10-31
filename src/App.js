@@ -17,6 +17,7 @@ import Footer from './components/Footer/Footer';
 import MyOrder from './components/MyOrder/MyOrder';
 import Contact from './components/Contact/Contact';
 import WeOffer from './components/WeOffer/WeOffer';
+import NotFound from './components/WeOffer/NotFound'
 
 function App() {
   return (
@@ -49,6 +50,9 @@ function App() {
           <PrivateRoute path='/productinfo/:id'>
             <Tour />
           </PrivateRoute>
+          <Route path='*'>
+            <NotFound />
+          </Route>
           </Switch>
           <Footer />
       </Router>
