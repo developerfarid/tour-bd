@@ -10,7 +10,7 @@ const AllProduct = () => {
         up:"Approved"
     }
     useEffect(() => {
-        fetch(`http://localhost:5000/booking`)
+        fetch(`https://ghoulish-pumpkin-61403.herokuapp.com/booking`)
             .then(res => res.json())
         .then(data => setOrder(data))
     }, [user?.email])
@@ -25,7 +25,7 @@ const AllProduct = () => {
           })
     }
     const handleUpdate = (id) => {
-        fetch(`http://localhost:5000/booking/${id}`, {
+        fetch(`https://ghoulish-pumpkin-61403.herokuapp.com/booking/${id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -34,7 +34,7 @@ const AllProduct = () => {
         })
             .then(ress=> ress.json())
             .then(res => {
-                fetch(`http://localhost:5000/booking`)
+                fetch(`https://ghoulish-pumpkin-61403.herokuapp.com/booking`)
                 .then(res => res.json())
                     .then(data => {
                         setOrder(data)
@@ -57,7 +57,7 @@ const AllProduct = () => {
             confirmButtonText: 'Yes, delete it!'
           }).then((result) => {
               if (result.isConfirmed) {
-                fetch(`http://localhost:5000/booking/${id}`, {
+                fetch(`https://ghoulish-pumpkin-61403.herokuapp.com/booking/${id}`, {
                     method:"DELETE"
                 })
                     .then(ress=> ress.json())

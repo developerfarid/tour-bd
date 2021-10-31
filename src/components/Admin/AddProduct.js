@@ -1,9 +1,9 @@
 import axios from 'axios';
 import React from 'react';
 import { useForm } from "react-hook-form";
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
+import './Admin.css';
 
-import './Admin.css'
 
 const AddProduct = () => {
     const myAlartForDataAdd = () => {
@@ -26,7 +26,7 @@ const AddProduct = () => {
     }
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const onSubmit = data => {
-        axios.post("http://localhost:5000/allProduct", data)
+        axios.post("https://ghoulish-pumpkin-61403.herokuapp.com/allProduct", data)
             .then(response => {
                 if (response.data.insertedId) {
                     myAlartForDataAdd()

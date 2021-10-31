@@ -4,7 +4,7 @@ import { Col, Container, Row, Table } from 'react-bootstrap';
 const AllEmail = () => {
     const [email, setEmail] = useState([])
     useEffect(() => {
-        fetch("http://localhost:5000/newsLetter")
+        fetch("https://ghoulish-pumpkin-61403.herokuapp.com/newsLetter")
             .then(res => res.json())
             .then(data => setEmail(data))
     })
