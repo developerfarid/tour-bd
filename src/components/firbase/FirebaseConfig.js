@@ -6,7 +6,7 @@ const firebaseConfig = {
     // messagingSenderId:process.env.REACT_APP_MESSAGINGSENDERID,  
     // appId: process.env.REACT_APP_APPID
     
-    apiKey: "AIzaSyC4EjR8ae2yGIYIKk9D1ASTsZ4OFcvOtBo",
+  apiKey: "AIzaSyC4EjR8ae2yGIYIKk9D1ASTsZ4OFcvOtBo",
   authDomain: "assinments11.firebaseapp.com",
   projectId: "assinments11",
   storageBucket: "assinments11.appspot.com",
